@@ -1,0 +1,9 @@
+/runtime
+/vendor
+apk.log
+.env
+.env.backup
+.phpunit.result.cache
+.idea
+.idea/*
+composer.lock
