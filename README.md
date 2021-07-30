@@ -91,13 +91,7 @@
     - 执行命令 `sudo wget http://pecl.php.net/get/swoole-4.4.18.tgz`
     - 执行命令 `tar zxvf swoole-4.4.18.tgz && cd swoole-4.4.18`
     - 执行命令 `sudo /usr/local/php7/bin/phpize`
-    - 执行命令 `sudo ./configure --with-php-config=/usr/local/php7/bin/php-config \
-                 --enable-coroutine \
-                 --enable-openssl  \
-                 --enable-http2  \
-                 --enable-async-redis \
-                 --enable-sockets \
-                 --enable-mysqlnd`
+    - 执行命令 `sudo ./configure --with-php-config=/usr/local/php7/bin/php-config --enable-coroutine --enable-openssl --enable-http2 --enable-async-redis --enable-sockets --enable-mysqlnd`
     - 执行命令 `sudo make clean`
     - 执行命令 `sudo make`
     - 执行命令 `sudo make install`
