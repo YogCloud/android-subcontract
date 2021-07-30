@@ -89,7 +89,7 @@
     - 执行命令 `php -v`
 - 安装 `Swoole4.x`
     - 执行命令 `sudo wget http://pecl.php.net/get/swoole-4.4.18.tgz`
-    - 执行命令 `tar zxvf swoole-4.4.18.tgz`
+    - 执行命令 `tar zxvf swoole-4.4.18.tgz && cd swoole-4.4.18`
     - 执行命令 `sudo /usr/local/php7/bin/phpize`
     - 执行命令 `sudo ./configure --with-php-config=/usr/local/php7/bin/php-config \
                  --enable-coroutine \
