@@ -62,8 +62,20 @@
     - 通知 打包后下载地址
         - 通知参数 `mch_id, download_url, attach`
         - 判断返回 `SUCCESS`
-    
-### 环境安装
+### Docker运行
+
+- 前期准备
+    - 安装 `docker`
+    - 拉取 `代码并配置腾讯云OSS配置`
+- 映射目录运行
+    - 执行命令 `composer update`
+    - `/worker/project` 这个路径是我宿主机的路径，请根据实际路径来
+    - 执行命令 `docker run -p 9501:9501 -v /worker/project:/opt --privileged -u root --entrypoint /opt/start.sh h6play/apk-subcontract:v1`
+- 构建镜像运行
+    - 执行命令 `docker build -t apkbb:v1 .`
+    - 执行命令 `docker run -it apkbb:v1`
+
+### 自行部署
 
 - 安装 `Ubuntu:20`
     - 购买云主机/搭建虚拟机
